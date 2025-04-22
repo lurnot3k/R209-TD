@@ -9,7 +9,7 @@ function affichage(data) {
     meteomax.textContent = `temp max = ${data.forecast.tmax}`;
     meteomin.textContent = `temp min = ${data.forecast.tmin}`;
     probapluie.textContent = `proba = ${data.forecast.probarain}%`;
-    ensoleillement.textContent = `ensoleillement = ${displayHours(data.forecast.sun_hours)}`;
+    ensoleillement.textContent = `ensoleillement = ${heures(data.forecast.sun_hours)}`;
 }
 
 
@@ -19,3 +19,7 @@ function bouton() {
     document.body.appendChild(bouton);
     bouton.textContent = "recommencer";
 }
+
+function heures(sunHours) {
+    return sunHours + (sunHours > 1 ? " heures" : " heure");
+  }
