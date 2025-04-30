@@ -44,6 +44,7 @@ ul {
     margin-top: 20px;
     display: flex;
     justify-content: center;
+    border-radius: 10px;
 }
 button {
     padding: 10px 20px;
@@ -52,10 +53,13 @@ button {
 
 .text_bouton {
     font-size: 20px;
+    border-radius: 10px;
 }
 .text_bouton:hover {
     background-color: #5faaff;
-    color: white
+    color: white;
+    border-radius: 10px;
+    transition: 0.2s ease-in-out;
 }
 
 .signature {
@@ -69,4 +73,8 @@ button {
         margin-left: 100px;
         margin-right: 100px;
     }
+}
+
+#communeSelect {
+    display: none;
 }

@@ -16,11 +16,22 @@
     </div>
     <h1>INSTANT WEATHER</h1>
     <div class="formulaire">
-        <form action="/ma-page-de-traitement" method="post">
+        <form method="post">
             <ul>
               <li>
                 <label for="codepostal" class="copo" style="font-weight: bold">Code Postal</label>
-                <input type="text" id="codepostal" name="codepostal" class="copo"/>
+                <input type="text" id="codepostal" name="codepostal" placeholder="Entrez un code postal..." class="copo"/>
+              </li>
+              <select id="communeSelect"></select>
+              <li id="info_meteo" class="donnéeMétéo">
+                <div class="meteomax" >
+                </div>
+                <div class="meteomin">
+                </div>
+                <div class="probapluie">
+                </div>
+                <div class="ensoleillement">
+                </div>
               </li>
               <li class="bouton">
                 <button type="submit" class="text_bouton">Envoyer</button>
@@ -29,8 +40,7 @@
         </form>     
     </div>
     <div class="signature">
-        <i>DUBOUST Arthur, LOUISFERT Corentin, GIRED Lubin, RIBARDIERE Julien</i>
-        <!--http://10.42.18.88:5500-->
+        <i>DUBOUST Arthur, LOUISFERT Corentin, GIRERD Lubin, RIBARDIERE Julien</i>
     </div>
 </body>
 </html>
